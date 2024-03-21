@@ -1,0 +1,86 @@
+body {
+    font-family: '', sans-serif;
+    color: #333;
+    background-color: #e0e0e0;
+}
+
+header {
+    background-color: #0099cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* media queries  */
+
+/* apply to all screen sizes */
+body {
+    font-family: 'Your-Google-Font-Name', sans-serif;
+    color: #333;
+    background-color: #e0e0e0;
+    /* other base styles */
+}
+
+
+
+/* Tablets (screens smaller than 768px)  */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    .card {
+        width: 100%;
+    }
+
+    /* Other styles for tablet view */
+}
+
+/* Mobile phones (screens smaller than 480px) */ 
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .card {
+        /* Adjust card styles for mobile */
+    }
+
+    /* Other styles for mobile view */
+}
