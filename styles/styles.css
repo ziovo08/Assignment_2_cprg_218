@@ -85,10 +85,21 @@ section {
     }
 }
 
+.video-container {
+    display: flex;
+   justify-content: center;
+   overflow: hidden;
+   padding: 3px;
+   margin: auto
+}
+
+
+
+
 
 
 /* ACCORDION */
-.accordion h3.active {
+/* .accordion h3.active {
     font-weight: bold;
     color: #0099cc;
 }
@@ -100,6 +111,46 @@ section {
     overflow: hidden;
 }
 
+ */
+
+
+/* Base styles for accordion */
+.accordion {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style for accordion headers */
+.accordion h3 {
+    background-color: #0077b6; /* Darker shade of blue for headers */
+    color: white;
+    padding: 15px;
+    margin: 0; /* Remove default margins */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style for active accordion header */
+.accordion h3.active {
+    font-weight: bold;
+    background-color: #0099cc; /* Lighter blue when active */
+}
+
+/* Style for accordion panels */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+
+
+
+
 
 footer {
     background-color: #404040;
@@ -107,6 +158,20 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media queries  */
 
@@ -125,6 +190,11 @@ body {
     header h1 {
         font-size: 1.5em;
     }
+
+    iframe{
+        height: 200px;
+        max-width: 100%
+    }
     
 
 
@@ -135,6 +205,7 @@ body {
 @media (max-width: 480px) {
     header {
         padding: 10px 0;
+        height: 175px;
     }
 
     header h1 {
@@ -145,6 +216,13 @@ body {
         margin: 10px;
         padding: 10px;
     }
+
+    iframe {
+        height: 200px;
+        max-width: 100%
+        
+    }
+    
 
 
 
