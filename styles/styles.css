@@ -1,3 +1,8 @@
+h1, h2, h3 {
+    font-family: "Gemunu Libre", sans-serif;
+    font-weight: 600;
+}
+
 body {
     font-family: '', sans-serif;
     color: #333;
@@ -74,16 +79,14 @@ section {
 /* Responsive Cards */
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center; 
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr; /* One column layout on smaller screens */
-    }
-}
+
+
 
 .video-container {
     display: flex;
@@ -146,7 +149,25 @@ section {
     transition: max-height 0.3s ease-out;
 }
 
+.accordion h3 i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
 
+.accordion h3.active i {
+    transform: rotate(180deg); 
+    transition: 0.75s ease-in-out;
+}
+
+
+.fa-square-caret-up {
+    font-size: 20px; /* Icon size */ 
+}
+
+.fa-square-caret-up:hover {
+    transform: rotate(180deg); 
+    transition: 0.85s ease-in-out;
+}
 
 
 
