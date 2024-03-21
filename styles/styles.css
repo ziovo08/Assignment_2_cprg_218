@@ -23,13 +23,62 @@ section {
     border-radius: 8px;
 }
 
+/* ... CARD ... */
+
 .card {
     background-color: #f0f0f0;
-    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 15px;
     margin-bottom: 20px;
+    text-align: center;
 }
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: #0099cc;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Responsive Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* One column layout on smaller screens */
+    }
+}
+
+
+
+/* ACCORDION */
+.accordion h3.active {
+    font-weight: bold;
+    color: #0099cc;
+}
+
+.panel {
+    display: none;
+    padding: 0 18px;
+    background-color: white;
+    overflow: hidden;
+}
+
 
 footer {
     background-color: #404040;
@@ -56,9 +105,7 @@ body {
         font-size: 1.5em;
     }
     
-    .card {
-        width: 100%;
-    }
+
 
     /* Other styles for tablet view */
 }
@@ -78,9 +125,7 @@ body {
         padding: 10px;
     }
 
-    .card {
-        /* Adjust card styles for mobile */
-    }
+
 
     /* Other styles for mobile view */
 }
