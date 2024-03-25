@@ -17,7 +17,7 @@ header {
     overflow: hidden;
     height: 300px;
     background-size: cover;
-    background-image: url("/assets/PSPBlack1.jpg");
+    background-image: url("../assets/PSPBlack1.jpg");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@ header {
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
-
+}
 
 section {
     margin: 20px;
@@ -182,5 +182,4 @@ footer {
     }
 
 
-}
 }
