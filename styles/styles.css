@@ -25,6 +25,22 @@ header {
     flex-direction: column;
 }
 
+.overlay-container {
+  position: relative;
+  color: white;
+}
+
+.overlay-container img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-container .text {
+  background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) as needed */
+  padding: 15px;
+}
+
+
 /* comment for commit test  */
 .visually-hidden {
     position: absolute;
@@ -61,7 +77,9 @@ section {
 
 .card h3 {
     margin-top: 10px;
-    color: #0099cc;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) as needed */
+  padding: 15px;
 }
 
 .card p {
